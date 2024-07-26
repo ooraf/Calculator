@@ -25,6 +25,7 @@ namespace Calculator
         private string operand2 = string.Empty;
         private char operation;
         private double result = 0.0;
+        private Button activeOperatorButton = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -34,6 +35,11 @@ namespace Calculator
             Button button = sender as Button;
             input += button.Content.ToString();
             ResultTextBox.Text = input;
+            if (activeOperatorButton != null)
+            {
+                activeOperatorButton.ClearValue(Button.TagProperty);
+                activeOperatorButton = null;
+            }
         }
 
         private void OperatorButton_Click(object sender, RoutedEventArgs e)
@@ -42,7 +48,18 @@ namespace Calculator
             operand1 = input;
             operation = Convert.ToChar(button.Content.ToString().Replace("×", "*").Replace("÷", "/"));
             input = string.Empty;
+
+            // Zurücksetzen der vorher aktiven Schaltfläche
+            if (activeOperatorButton != null)
+            {
+                activeOperatorButton.ClearValue(Button.TagProperty);
+            }
+
+            // Setzen der aktiven Schaltfläche
+            button.Tag = "Active";
+            activeOperatorButton = button;
         }
+
 
         private void EqualsButton_Click(object sender, RoutedEventArgs e)
         {
@@ -73,6 +90,11 @@ namespace Calculator
             input = string.Empty;
             operand1 = string.Empty;
             operand2 = string.Empty;
+            if (activeOperatorButton != null)
+            {
+                activeOperatorButton.ClearValue(Button.TagProperty);
+                activeOperatorButton = null;
+            }
         }
 
         private void ClearButton_Click(object sender, RoutedEventArgs e)
@@ -81,6 +103,11 @@ namespace Calculator
             operand1 = string.Empty;
             operand2 = string.Empty;
             ResultTextBox.Text = "0";
+            if (activeOperatorButton != null)
+            {
+                activeOperatorButton.ClearValue(Button.TagProperty);
+                activeOperatorButton = null;
+            }
         }
 
         private void NegateButton_Click(object sender, RoutedEventArgs e)
