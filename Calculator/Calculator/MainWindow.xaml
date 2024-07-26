@@ -12,6 +12,15 @@
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Margin" Value="2"/>
             <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="25" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
         <Style x:Key="OperatorButtonStyle" TargetType="Button">
             <Setter Property="FontSize" Value="24"/>
@@ -21,6 +30,15 @@
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Margin" Value="2"/>
             <Setter Property="Padding" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="25" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
         <Style x:Key="EqualsButtonStyle" TargetType="Button" BasedOn="{StaticResource OperatorButtonStyle}">
             <Setter Property="Background" Value="#FF9500"/>
