@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\",
+  "WorkspaceRootPath": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|c:\\users\\rrahmani\\documents\\repositories\\githubprojects\\private\\calculator\\calculator\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|c:\\users\\rrahmani\\documents\\repositories\\githubprojects\\calculator\\calculator\\calculator\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\calculator\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\calculator\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DBAEE12B-1303-4E68-8D97-C714A9F67B23}|Calculator\\Calculator.csproj|solutionrelative:calculator\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -18,35 +18,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 219,
-          "SelectedChildIndex": -1,
-          "Children": []
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "d4662466-e8b8-4c68-9677-79c8d06de41a",
-        "Display": 2,
-        "X": 32,
-        "Y": 78,
-        "Width": 1484,
-        "Height": 808,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\Calculator\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\Calculator\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Calculator\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\Calculator\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\Calculator\\MainWindow.xaml",
               "RelativeToolTip": "Calculator\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-07-29T10:14:15.098Z",
@@ -56,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\Calculator\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\Calculator\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Calculator\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Private\\Calculator\\Calculator\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\rrahmani\\Documents\\Repositories\\GitHubProjects\\Calculator\\Calculator\\Calculator\\MainWindow.xaml.cs",
               "RelativeToolTip": "Calculator\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAAAAAKUAAAANAAAA",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-29T10:15:25.709Z",
               "EditorCaption": ""

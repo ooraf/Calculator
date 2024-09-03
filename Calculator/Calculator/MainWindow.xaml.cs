@@ -34,8 +34,13 @@ namespace Calculator
         private void OperatorButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
-            operand1 = input;
-            operation = Convert.ToChar(button.Content.ToString().Replace("×", "*").Replace("÷", "/").Replace("AC", "+/-"));
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                // Nur aktualisieren, wenn die Eingabe nicht leer ist
+                operand1 = input;
+            }
+            operation = Convert.ToChar(button.Content.ToString().Replace("×", "*").Replace("÷", "/"));
             input = string.Empty;
 
             // Zurücksetzen der vorher aktiven Schaltfläche
@@ -74,10 +79,13 @@ namespace Calculator
                         MessageBox.Show("Division durch 0 nicht möglich");
                     break;
             }
+
             ResultTextBox.Text = result.ToString();
-            input = string.Empty;
-            operand1 = string.Empty;
+            input = result.ToString();  // Ergebnis als neue Eingabe setzen
+            operand1 = result.ToString(); // Operand1 auf Ergebnis setzen
             operand2 = string.Empty;
+
+            // Zurücksetzen des aktiven Operator-Buttons
             if (activeOperatorButton != null)
             {
                 activeOperatorButton.ClearValue(Button.TagProperty);
@@ -90,7 +98,9 @@ namespace Calculator
             input = string.Empty;
             operand1 = string.Empty;
             operand2 = string.Empty;
+            result = 0.0; // Ergebnis auch zurücksetzen
             ResultTextBox.Text = "0";
+
             if (activeOperatorButton != null)
             {
                 activeOperatorButton.ClearValue(Button.TagProperty);
